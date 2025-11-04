@@ -1,0 +1,21 @@
+{
+  "name": "Simplified PySpark Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "ms-python.python", // Python extension
+        "ms-toolsai.jupyter" // Jupyter support
+      ]
+    }
+  },
+  // Forward the Spark UI port
+  "forwardPorts": [4040],
+  
+  "workspaceFolder": "/workspace"
+}
