@@ -15,10 +15,11 @@ This repository contains a reproducible, single-node **PySpark** development env
 ### Setup in VS Code
 
 1.  **Clone the Repository:** Clone this repo to your local machine.
-2.  **Open Folder:** Open the main project folder (`/spark-dev` or similar) in VS Code.
-3.  **Reopen in Container:** VS Code should automatically detect the `.devcontainer` folder and prompt you to **"Reopen in Container."** Click this button.
+2.  **Rename the devcontainer to .devcontainer this is a very important step**
+3.  **Open Folder:** Open the main project folder (`/spark-dev` or similar) in VS Code.
+4.  **Reopen in Container:** VS Code should automatically detect the `.devcontainer` folder and prompt you to **"Reopen in Container."** Click this button.
     * *If the prompt does not appear:* Open the Command Palette (`Ctrl+Shift+P` or `F1`) and run **`Dev Containers: Rebuild and Reopen in Container`**.
-4.  **Wait:** VS Code will build the Docker image (this may take a few minutes the first time) and connect your workspace to the container.
+5.  **Wait:** VS Code will build the Docker image (this may take a few minutes the first time) and connect your workspace to the container.
 
 ---
 
@@ -32,4 +33,5 @@ Run the PySpark shell:
 
 ```bash
 pyspark
+
 # You should see the Spark Welcome screen. Type 'exit()' to quit.
