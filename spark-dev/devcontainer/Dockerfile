@@ -2,8 +2,9 @@
 FROM python:3.10-slim-bullseye
 
 # Install OpenJDK 17 (Java is still required to run Spark's JVM components)
+# I've added 'procps' here to include the 'ps' command.
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends openjdk-17-jre wget && \
+    apt-get install -y --no-install-recommends openjdk-17-jre wget **procps** && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Set Java Home environment variable
